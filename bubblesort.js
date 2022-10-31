@@ -89,4 +89,4 @@ async function BubbleSort(delay = 100) {
 
 generatearray();
 
-BubbleSort();
+
