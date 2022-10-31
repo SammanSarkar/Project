@@ -41,49 +41,11 @@ h2{
   transition: transform 0.4s ease;
   margin-bottom: 20px;
 }
-.box a {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  padding: 100px 100px;
-  width: 800px;
-  margin-top: 1em;
-  transition: 0.3s all ease;
-}
+
 .box:hover {
   
   background: #c0a6f6;
   box-shadow: 2px 2px 2px #000;
-}
-.cover {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  left: -100vw;
-  z-index: 1000;
-}
-.transition.slide .cover1 {
-  background-color: rgb(221, 180, 255);
-  animation: slide 0.3s ease-in-out forwards;
-}
-.transition.slide .cover2 {
-  background-color: rgb(141, 49, 163);
-  animation: slide 0.3s ease-in-out forwards;
-  animation-delay: 0.3s;
-}
-.transition.slide .cover3 {
-  background-color: #5c1d66;
-  animation: slide 0.3s ease-in-out forwards;
-  animation-delay: 0.6s;
-}
-@keyframes slide {
-  from {
-    left: -100vw;
-  }
-  to {
-    left: 0;
-  }
 }
 .box:nth-of-type(even) {
   transform: translateX(-400%);
@@ -154,13 +116,13 @@ animation: move-wave 3s;
  animation-delay: 1s;
 }
 .waveMiddle {
-  background-size: 50% 120px;
+  background-size: 50% 100px;
 }
 .waveAnimation .waveMiddle {
   animation: move_wave 10s linear infinite;
 }
 .waveBottom {
-  background-size: 50% 100px;
+  background-size: 50% 120px;
 }
 .waveAnimation .waveBottom {
   animation: move_wave 15s linear infinite;
@@ -366,4 +328,40 @@ animation: move-wave 3s;
       0% 100%
     );
   }
+}
+
+/* * {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+} */
+
+.header {
+	font-size: 20px;
+	text-align: center;
+}
+
+#array {
+	background-color: white;
+	height: 413px;
+	width: 598px;
+	margin: auto;
+	position: relative;
+	margin-top: 64px;
+}
+
+.block {
+	width: 28px;
+	background-color: #584d75;
+	position: absolute;
+	bottom: 0px;
+	transition: 0.2s all ease;
+}
+
+.block_id {
+	position: absolute;
+	color: black;
+	margin-top: -20px;
+	width: 100%;
+	text-align: center;
 }
