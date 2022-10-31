@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 * {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -34,4 +32,12 @@
 	margin-top: -20px;
 	width: 100%;
 	text-align: center;
+}
+button {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	margin-left: 49%;
+	margin-top: 50px;
 }
