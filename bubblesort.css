@@ -6,22 +6,25 @@
 }
 
 .header {
-	font-size: 20px;
+	font-size: 50px;
 	text-align: center;
+	color: #b96dd7;
 	font-family: "Poppins", sans-serif;
 }
-
+h1{
+	color: #b96dd7;
+}
 #array {
 	background-color: white;
-	height: 413px;
-	width: 598px;
+	height: 300px;
+	width: 839px;
 	margin: auto;
 	position: relative;
-	margin-top: 64px;
+
 }
 
 .block {
-	width: 28px;
+	width: 80px;
 	background-color: #584d75;
 	position: absolute;
 	bottom: 0px;
@@ -30,16 +33,20 @@
 
 .block_id {
 	position: absolute;
-	color: black;
-	margin-top: -20px;
+	color: #fff;
+	margin-top: 22px;
 	width: 100%;
+	font-size: 25px;
+	font-family: "Poppins", sans-serif;
 	text-align: center;
 }
 button {
     padding: 7px;
     border: none;
-    border-radius: 4px;
+    border-radius: 26px;
+	height: 80px;
+	width: 200px;
     cursor: pointer;
-	margin-left: 49%;
-	margin-top: 50px;
+	margin-left: 44%;
+	margin-top: 120px;
 }
