@@ -329,7 +329,7 @@ animation: move-wave 3s;
 
 .content1 h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 2px #a53db7;
+  -webkit-text-stroke: 2px #f1aff7;
 }
 
 .content1 h2:nth-child(2) {
