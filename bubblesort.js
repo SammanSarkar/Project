@@ -2,7 +2,7 @@ var container = document.getElementById("array");
 
 
 function generatearray() {
-	for (var i = 0; i < 20; i++) {
+	for (var i = 0; i < 10; i++) {
 
 		
 		var value = Math.ceil(Math.random() * 100);
@@ -14,8 +14,8 @@ function generatearray() {
 		array_ele.classList.add("block");
 
 		
-		array_ele.style.height = `${value * 3}px`;
-		array_ele.style.transform = `translate(${i * 30}px)`;
+		array_ele.style.height = `${80}px`;
+		array_ele.style.transform = `translate(${i * 86}px)`;
 
 		
 		var array_ele_label = document.createElement("label");
@@ -43,7 +43,7 @@ function swap(el1, el2) {
 			setTimeout(() => {
 				container.insertBefore(el2, el1);
 				resolve();
-			}, 250);
+			}, 800);
 		});
 	});
 }
