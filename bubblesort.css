@@ -16,7 +16,7 @@ h1{
 }
 #array {
 	background-color: white;
-	height: 300px;
+	height: 160px;
 	width: 839px;
 	margin: auto;
 	position: relative;
@@ -38,18 +38,174 @@ h1{
 	width: 100%;
 	font-size: 25px;
 	font-family: "Poppins", sans-serif;
-	text-align: center;
+	text-align: center;	
 }
 button {
     padding: 7px;
     border: none;
 	font-family: "Poppins", sans-serif;
-	font-size: 22px;
+	font-size: 15px;
 	color: #b96dd7;
     border-radius: 26px;
 	height: 80px;
 	width: 200px;
     cursor: pointer;
 	margin-left: 44%;
-	margin-top: 120px;
+	margin-top: 40px;
 }
+
+
+.container {
+    margin: 0;
+    padding: 0;
+	font-family: "Poppins", sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 700px;
+    height: 300px ;
+    margin: auto;
+    background-color: #913ab3;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 14px 28px rgba(150, 120, 68, 0.4), 0 10px 10px rgba(150, 120, 68, 0.4);
+    box-shadow: 0 14px 28px rgba(150, 120, 68, 0.4), 0 10px 10px rgba(150, 120, 68, 0.4);
+}
+
+.card:hover .description {
+    left: 100%;
+}
+
+.infoCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.infoCard .infoimage {
+    width: 37%;
+    padding: 0 4% 0 .5%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.infoCard .infoimage .img {
+    padding: 25px 10px;
+    margin: 40px auto;
+    border-radius: 50%;
+    border: 2px solid #7e44fc;
+    background-color: cornsilk;
+}
+
+.infoCard .infoimage .img img {
+    margin: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.infoCard .infoimage .simpleInfo {
+    background-color: #590f74;
+    padding: 3px 6px;
+    margin: 50%;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.infoCard .infoimage .simpleInfo h3 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.infoCard .infoDetails {
+    width: 62%;
+    -ms-flex-item-align: stretch;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    color: #fff;
+    padding: 0 2%;
+    position: relative;
+}
+
+.description {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 37%;
+    background-color: #fff;
+    width: 63%;
+    height: 100%;
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    overflow: hidden;
+    border-radius: 0 3px 3px 0;
+    opacity: 1;
+}
+
+.description .name {
+    text-align: center;
+    padding: 10px 0px 5px;
+}
+
+.description .name h1 {
+    margin: 0;
+    font-size: 2.4em;
+}
+
+.description .textDescription p {
+	text-align: center;
+    padding: 10px;
+}
+
+.description h4 {
+ 
+    bottom: 10px;
+    right: 10px;
+	text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    color: #7e44fc;
+}
+
+
