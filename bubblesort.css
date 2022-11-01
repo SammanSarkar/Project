@@ -7,17 +7,20 @@
 
 .header {
 	font-size: 50px;
+    font-weight: 600;
 	text-align: center;
 	color: #b96dd7;
 	font-family: "Poppins", sans-serif;
+    
 }
 h1{
 	color: #b96dd7;
+    
 }
 #array {
 	background-color: white;
-	height: 160px;
-	width: 839px;
+	height: 97px;
+	width: 854px;
 	margin: auto;
 	position: relative;
 
@@ -29,6 +32,7 @@ h1{
 	position: absolute;
 	bottom: 0px;
 	transition: 0.2s all ease;
+    border-radius: 11px;
 }
 
 .block_id {
@@ -209,3 +213,12 @@ button {
 }
 
 
+#dabba{
+    width: 900px;
+    height: 120px;
+    margin-top: 35px;
+    border: 3px solid #b96dd7;
+    padding: 0px;
+    margin-left: 330px;
+    border-radius: 11px;
+  }
