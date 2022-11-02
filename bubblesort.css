@@ -208,6 +208,9 @@ h1{
     margin-left: 330px;
     border-radius: 11px;
   }
+#buttons{
+  margin-left: 31%;
+}
   .btn-45,
 .btn-45 *,
 .btn-45 :after,
@@ -252,10 +255,10 @@ h1{
   border: 1px solid;
   border-radius: 999px;
   box-sizing: border-box;
-  display: block;
+  /* display: block; */
   overflow: hidden;
   margin-top: 30px;
-  margin-left: 690px;
+  /* margin-left: 690px; */
   padding: 1.2rem 3rem;
   position: relative;
   text-transform: uppercase;
