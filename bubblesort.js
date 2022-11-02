@@ -1,7 +1,14 @@
 var container = document.getElementById("array");
-
+var stop = false ;
 
 function generatearray() {
+	var container1 = document.getElementById("div");
+	stop = false; 
+var elements = container.getElementsByClassName("block");
+
+while (elements[0]) {
+    elements[0].parentNode.removeChild(elements[0]);
+}
 	for (var i = 0; i < 10; i++) {
 
 		
@@ -50,12 +57,15 @@ function swap(el1, el2) {
 
 
 async function BubbleSort(delay = 100) {
+	stop = false ; 
 	var blocks = document.querySelectorAll(".block");
 
 	
 	for (var i = 0; i < blocks.length; i += 1) {
 		for (var j = 0; j < blocks.length - i - 1; j += 1) {
-
+			if(stop){
+				return ; 
+			}
 		
 			blocks[j].style.backgroundColor = "#a53db7";
 			blocks[j + 1].style.backgroundColor = "#a53db7";
@@ -85,8 +95,11 @@ async function BubbleSort(delay = 100) {
 		blocks[blocks.length - i - 1]
 				.style.backgroundColor = "#86377b";
 	}
+	
 }
-
+function stopsort() {
+	stop = true ; 
+  }
 generatearray();
 
 
