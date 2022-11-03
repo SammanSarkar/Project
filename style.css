@@ -70,12 +70,19 @@ h2{
 .transition.slide .cover2 {
   background-color: rgb(141, 49, 163);
   animation: slide 0.3s ease-in-out forwards;
-  animation-delay: 0.3s;
+  animation-delay: 0.3s;  
 }
 .transition.slide .cover3 {
+
   background-color: #5c1d66;
   animation: slide 0.3s ease-in-out forwards;
   animation-delay: 0.6s;
+}
+.transition.slide .cover3 h1{ 
+  text-align: center;
+  margin-top:  280px;
+  color: #da82f0;
+  font-size: 60px;
 }
 @keyframes slide {
   from {
@@ -315,8 +322,9 @@ animation: move-wave 3s;
 
 
 .content1 {
-  position: relative;
 
+  position: relative;
+ 
   margin-bottom: 200px;
 }
 
@@ -333,8 +341,8 @@ animation: move-wave 3s;
 }
 
 .content1 h2:nth-child(2) {
-  color: #a53db7;
-  animation: animate 2.7s ease-in-out infinite;
+  color: #a53db7;     
+  animation: animate 2.6s ease-in-out infinite;
 }
 
 @keyframes animate {
