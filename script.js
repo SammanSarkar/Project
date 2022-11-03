@@ -76,7 +76,7 @@ const phrases = [
 ];
 
 const el = document.querySelector(".text");
-const fx = new TextScramble(el);
+const fx = new TextScramble(el);  
 
 let counter = 0;
 const next = () => {
@@ -87,12 +87,58 @@ const next = () => {
 };
 
 next();
-const link = document.querySelector(".link");
+const link0 = document.querySelector(".link0");
+const link1 = document.querySelector(".link1");
+const link2 = document.querySelector(".link2");
+const link3 = document.querySelector(".link3");
+const link4 = document.querySelector(".link4");
+const link5 = document.querySelector(".link5");
 const transition = document.querySelector(".transition");
-link.addEventListener("click", (e) => {
+link0.addEventListener("click", (e) => {
+   document.getElementById("change").innerHTML = "Bubble Sort";
   e.preventDefault();
   transition.classList.add("slide");
   setTimeout(() => {
-    window.location = link.href;
-  }, 900);
+    window.location = link0.href;
+  }, 1500);
+});
+link1.addEventListener("click", (e) => {
+  document.getElementById("change").innerHTML = "Insertion Sort";
+ e.preventDefault();
+ transition.classList.add("slide");
+ setTimeout(() => {
+   window.location = link1.href;
+ }, 1500);
+});
+link2.addEventListener("click", (e) => {
+  document.getElementById("change").innerHTML = "Selection Sort";
+ e.preventDefault();
+ transition.classList.add("slide");
+ setTimeout(() => {
+   window.location = link2.href;
+ }, 1500);
+});
+link3.addEventListener("click", (e) => {
+  document.getElementById("change").innerHTML = "Merge Sort";
+ e.preventDefault();
+ transition.classList.add("slide");
+ setTimeout(() => {
+   window.location = link3.href;
+ }, 1500);
+});
+link4.addEventListener("click", (e) => {
+  document.getElementById("change").innerHTML = "Quick Sort";
+ e.preventDefault();
+ transition.classList.add("slide");
+ setTimeout(() => {
+   window.location = link4.href;
+ }, 1500);
+});
+link5.addEventListener("click", (e) => {
+  document.getElementById("change").innerHTML = "Heap Sort";
+ e.preventDefault();
+ transition.classList.add("slide");
+ setTimeout(() => {
+   window.location = link5.href;
+ }, 1500);
 });
