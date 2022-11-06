@@ -113,7 +113,7 @@ function algo_change(algo){
     +"items into a specific order,<br> &nbsp such as alphabetical, highest-to-lowest" 
     +"value or shortest-to-longest distance.<br><br>Real Life Examples: "; 
     
-   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"sorting/bubblesort.html\" ><h2>Bubble Sort </h2></a></div><div class=\"box\"><a href=\"sorting/intsertionsort.html\"  ><h2>Insertion Sort</h2></a></div><div class=\"box\"><a href=\"sorting/selectionsort.html\" ><h2>Selection sort</h2></a></div><div class=\"box\"><a href=\"sorting/mergesort.html\" ><h2>Merge Sort</h2></a></div><div class=\"box\"><a href=\"sorting/quicksort.html\" ><h2>Quick Sort</h2></a></div><div class=\"box\"><a href=\"sorting/heapsort.html\"  ><h2>Heap Sort</h2></a></div>";
+   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"sorting/bubblesort.html\" ><h2>Bubble Sort </h2></a></div><div class=\"box\"><a href=\"sorting/insertionsort.html\"  ><h2>Insertion Sort</h2></a></div><div class=\"box\"><a href=\"sorting/selectionsort.html\" ><h2>Selection sort</h2></a></div><div class=\"box\"><a href=\"sorting/mergesort.html\" ><h2>Merge Sort</h2></a></div><div class=\"box\"><a href=\"sorting/quicksort.html\" ><h2>Quick Sort</h2></a></div><div class=\"box\"><a href=\"sorting/heapsort.html\"  ><h2>Heap Sort</h2></a></div>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
   }else{
