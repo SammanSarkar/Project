@@ -103,8 +103,8 @@ next();
 //update function 
 function algo_change(algo){
   if(algo == 0){
-    document.getElementById("1").style.color = '#680780';
-    document.getElementById("2").style.color = '#a646c6';
+    document.getElementById("1").style.color = '#a646c6';
+    document.getElementById("2").style.color = '#680780';
     document.getElementById("choose").innerHTML = "Choose A Sorting Algorithm: " ; 
     phrases = p1 ; 
     document.getElementById("head").innerHTML = "Sorting" ; 
@@ -117,8 +117,8 @@ function algo_change(algo){
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
   }else{
-    document.getElementById("2").style.color = '#680780';
-    document.getElementById("1").style.color = '#a646c6'; 
+    document.getElementById("2").style.color = '#a646c6';
+    document.getElementById("1").style.color = '#680780'; 
     document.getElementById("choose").innerHTML = "Choose A Pathfinding Algorithm: " ; 
     phrases = p2 ; 
     document.getElementById("head").innerHTML = "Pathfinding" ; 
