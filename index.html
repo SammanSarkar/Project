@@ -7,15 +7,18 @@
     <title>Algorithm Visualizer</title>
   </head>
   <body>
-
+    <div id = "select_button">
+      <p id = "1" onclick="update(0)">Sorting Algorithm</p>
+      <p id = "2" onclick="update(1)">Pathfinding Algorithm</p>
+    </div>
     <section>
       <div class="content1">
-        <h2>Sorting</h2>
-        <h2>Sorting</h2>
+        <h2 id = "head">Sorting</h2>
+        <h2 id = "head2">Sorting</h2>
       </div>
      
     </section>
-    <h2>A sorting algorithm is a method for reorganizing a large number of 
+    <h2 id = "info">A sorting algorithm is a method for reorganizing a large number of 
       items into a specific order,<br> &nbsp such as alphabetical, highest-to-lowest 
       value or shortest-to-longest distance.<br><br>Real Life Examples: </h2>
     <div class="container">
@@ -50,16 +53,10 @@
           <div class="cover cover2"></div>
           <div class="cover cover3"><h1 id = "change" ></h1></div>
         </div>
-      <h1>Choose A Sorting Algorithm: </h1> 
+      <h1 id = "choose">Choose A Sorting Algorithm: </h1> 
+      <div id = "select_algo">
 
-      <div class="box"><a href="sorting/bubblesort.html"  class="link0"><h2>Bubble Sort </h2></a></div>
-      <div class="box"><a href="sorting/insertionsort.html"  class="link1"><h2>Insertion Sort</h2></a></div>
-      <div class="box"><a href="sorting/selectionsort.html"  class="link2"><h2>Selection sort</h2></a></div>
-      <div class="box"><a href="sorting/mergesort.html"  class="link3"><h2>Merge Sort</h2></a></div>
-      <div class="box"><a href="sorting/quicksort.html"  class="link4"><h2>Quick Sort</h2></a></div>
-      <div class="box"><a href="sorting/heapsort.html"  class="link5"><h2>Heap Sort</h2></a></div>
-      <br><br><br><br><br><br><br><br>
-
+      </div>
   
    
 
