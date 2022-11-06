@@ -40,7 +40,7 @@ while (elements[0]) {
 
 function swap(el1, el2) {
 	s++ ; 
-	document.getElementById("swap").innerHTML = "Swap Counter : " + s ; 
+	document.getElementById("swap").innerHTML = "Swap Counter :" + s ; 
 	return new Promise((resolve) => {
 
 		
