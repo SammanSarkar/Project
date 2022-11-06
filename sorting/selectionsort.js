@@ -71,13 +71,13 @@ async function SelectionSort(delay = 500) {
         if (min_idx !== i) {
   
           // Provide skyblue color to the (min-idx)th bar
-          bars[min_idx].style.backgroundColor = "#86377b";
+          bars[min_idx].style.backgroundColor = "#a53db7";
         }
         min_idx = j;
       } else {
   
         // Provide skyblue color to the jth bar
-        bars[j].style.backgroundColor = "#86377b";
+        bars[j].style.backgroundColor = "##a53db7";
       }
     }
     
@@ -103,7 +103,7 @@ async function SelectionSort(delay = 500) {
     bars[min_idx].style.backgroundColor = "#a53db7";
   
     // Provide lightgreen color to the ith bar
-    bars[i].style.backgroundColor = "#a53db7";
+    bars[i].style.backgroundColor = "#86377b";
   }
   
 }
