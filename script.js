@@ -1,13 +1,15 @@
-const boxes = document.querySelectorAll(".box");
+var boxes = document.querySelectorAll(".box");
+var algo =  0 ;
 
-const checkBoxes = () => {
+update(0) ; 
+function checkBoxes(){
   const triggerBottom = (window.innerHeight / 5) * 4;
   boxes.forEach((box) => {
     const boxTop = box.getBoundingClientRect().top;
     if (boxTop < triggerBottom) box.classList.add("show");
     else box.classList.remove("show");
   });
-};
+};  
 
 window.addEventListener("scroll", checkBoxes);
 checkBoxes();
@@ -65,21 +67,26 @@ class TextScramble {
     return this.chars[Math.floor(Math.random() * this.chars.length)];
   }
 }
-
-const phrases = [
+var p1 = [
   'Arranging students of as class in order of their height',
   'Students roll numbers assigned based on the alphabetical order of names',
   'During election poll counting, we are interested to know the order of the parties',
   'In any ecommerce website we tend to sort items by price from lowest to highest',
 
-
 ];
+var p2 = [
+ 'In video games, the computer must direct simulated opponents around the map',
+ 'Finding way through a maze',
+ 'Finding shortest distance between two locations',
+ 'Searching the web'
+];
+var phrases = p1;
 
 const el = document.querySelector(".text");
 const fx = new TextScramble(el);  
 
 let counter = 0;
-const next = () => {
+function next(){
   fx.setText(phrases[counter]).then(() => {
     setTimeout(next, 3200);
   });
@@ -87,58 +94,40 @@ const next = () => {
 };
 
 next();
-const link0 = document.querySelector(".link0");
-const link1 = document.querySelector(".link1");
-const link2 = document.querySelector(".link2");
-const link3 = document.querySelector(".link3");
-const link4 = document.querySelector(".link4");
-const link5 = document.querySelector(".link5");
-const transition = document.querySelector(".transition");
-link0.addEventListener("click", (e) => {
-   document.getElementById("change").innerHTML = "Bubble Sort";
-  e.preventDefault();
-  transition.classList.add("slide");
-  setTimeout(() => {
-    window.location = link0.href;
-  }, 1500);
-});
-link1.addEventListener("click", (e) => {
-  document.getElementById("change").innerHTML = "Insertion Sort";
- e.preventDefault();
- transition.classList.add("slide");
- setTimeout(() => {
-   window.location = link1.href;
- }, 1500);
-});
-link2.addEventListener("click", (e) => {
-  document.getElementById("change").innerHTML = "Selection Sort";
- e.preventDefault();
- transition.classList.add("slide");
- setTimeout(() => {
-   window.location = link2.href;
- }, 1500);
-});
-link3.addEventListener("click", (e) => {
-  document.getElementById("change").innerHTML = "Merge Sort";
- e.preventDefault();
- transition.classList.add("slide");
- setTimeout(() => {
-   window.location = link3.href;
- }, 1500);
-});
-link4.addEventListener("click", (e) => {
-  document.getElementById("change").innerHTML = "Quick Sort";
- e.preventDefault();
- transition.classList.add("slide");
- setTimeout(() => {
-   window.location = link4.href;
- }, 1500);
-});
-link5.addEventListener("click", (e) => {
-  document.getElementById("change").innerHTML = "Heap Sort";
- e.preventDefault();
- transition.classList.add("slide");
- setTimeout(() => {
-   window.location = link5.href;
- }, 1500);
-});
+
+//update function 
+function algo_change(algo){
+  if(algo == 0){
+    document.getElementById("1").style.color = '#680780';
+    document.getElementById("2").style.color = '#a646c6';
+    document.getElementById("choose").innerHTML = "Choose A Sorting Algorithm: " ; 
+    phrases = p1 ; 
+    document.getElementById("head").innerHTML = "Sorting" ; 
+    document.getElementById("head2").innerHTML = "Sorting" ; 
+    document.getElementById("info").innerHTML = "A sorting algorithm is a method for reorganizing a large number of" 
+    +"items into a specific order,<br> &nbsp such as alphabetical, highest-to-lowest" 
+    +"value or shortest-to-longest distance.<br><br>Real Life Examples: "; 
+    
+   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"sorting/bubblesort.html\" ><h2>Bubble Sort </h2></a></div><div class=\"box\"><a href=\"sorting/intsertionsort.html\"  ><h2>Insertion Sort</h2></a></div><div class=\"box\"><a href=\"sorting/selectionsort.html\" ><h2>Selection sort</h2></a></div><div class=\"box\"><a href=\"sorting/mergesort.html\" ><h2>Merge Sort</h2></a></div><div class=\"box\"><a href=\"sorting/quicksort.html\" ><h2>Quick Sort</h2></a></div><div class=\"box\"><a href=\"sorting/heapsort.html\"  ><h2>Heap Sort</h2></a></div>";
+   boxes = document.querySelectorAll(".box");
+   checkBoxes() ; 
+  }else{
+    document.getElementById("2").style.color = '#680780';
+    document.getElementById("1").style.color = '#a646c6'; 
+    document.getElementById("choose").innerHTML = "Choose A Pathfinding Algorithm: " ; 
+    phrases = p2 ; 
+    document.getElementById("head").innerHTML = "Pathfinding" ; 
+    document.getElementById("head2").innerHTML = "Pathfinding" ; 
+    document.getElementById("info").innerHTML = "Pathfinding algorithms are used to identify optimal routes through a graph for <br> uses such as logistics planning,"
+    +" least cost call or IP routing, and gaming simulation. <br><br>Real Life Examples: "; 
+
+   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"path/dijkstra.html\" ><h2>Dijkstra </h2></a></div><div class=\"box\"><a href=\"path/bfs.html.html\" ><h2>BFS</h2></a></div><div class=\"box\"><a href=\"path/dfs.html\" ><h2>DFS</h2></a></div>";
+   boxes = document.querySelectorAll(".box");
+   checkBoxes() ; 
+  }
+}
+
+function update(new_algo){
+  algo = new_algo ; 
+  algo_change(algo) ;     
+}
