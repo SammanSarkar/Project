@@ -74,7 +74,8 @@ async function InsertionSort(delay = 500) {
 		}
 		  
 		bars[j].style.backgroundColor = "#c0a6f6";
-		bars[j + 1].childNodes[0].innerText = bars[j].childNodes[0].innerText;
+		await swap(bars[j], bars[j + 1]);
+		bars = document.querySelectorAll(".block");
 	
 		// Assign j-1 to j
 		j = j - 1;
