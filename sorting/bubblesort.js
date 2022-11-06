@@ -1,7 +1,9 @@
 var container = document.getElementById("array");
 var stop = false ;
-
+var s=0; //swap counter
 function generatearray() {
+	s =0 ;	
+	document.getElementById("swap").innerHTML = "Swap Counter : 0" ; 
 	var container1 = document.getElementById("div");
 	stop = false; 
 var elements = container.getElementsByClassName("block");
@@ -37,6 +39,8 @@ while (elements[0]) {
 
 
 function swap(el1, el2) {
+	s++ ; 
+	document.getElementById("swap").innerHTML = "Swap Counter :" + s ; 
 	return new Promise((resolve) => {
 
 		
