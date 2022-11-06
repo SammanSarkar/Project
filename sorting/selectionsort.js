@@ -86,10 +86,8 @@ async function SelectionSort(delay = 500) {
 		}
 		  
     // To swap ith and (min_idx)th bar
-    var temp1 = bars[min_idx].style.height;
+
     var temp2 = bars[min_idx].childNodes[0].innerText;
-    bars[min_idx].style.height = bars[i].style.height;
-    bars[i].style.height = temp1;
     bars[min_idx].childNodes[0].innerText = bars[i].childNodes[0].innerText;
     await swap();
     bars[i].childNodes[0].innerText = temp2;
