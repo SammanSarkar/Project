@@ -1,3 +1,8 @@
+// This prevents the page from scrolling down to where it was previously.
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
 var boxes = document.querySelectorAll(".box");
 var algo =  0 ;
 
