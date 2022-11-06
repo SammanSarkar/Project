@@ -77,7 +77,7 @@ async function SelectionSort(delay = 500) {
       } else {
   
         // Provide skyblue color to the jth bar
-        bars[j].style.backgroundColor = "##a53db7";
+        bars[j].style.backgroundColor = "#a53db7";
       }
     }
     
@@ -86,7 +86,7 @@ async function SelectionSort(delay = 500) {
 		}
 		  
     // To swap ith and (min_idx)th bar
-
+    
     var temp2 = bars[min_idx].childNodes[0].innerText;
     bars[min_idx].childNodes[0].innerText = bars[i].childNodes[0].innerText;
     await swap();
