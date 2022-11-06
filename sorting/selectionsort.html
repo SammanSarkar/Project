@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insertion Sort</title>
+    <title>Selection Sort</title>
     <link rel="stylesheet" href="sort.css" />
 </head>
 <body>
@@ -22,8 +22,8 @@
      
       <ul id="menu">
         <a href="../index.html"><li>Home</li></a>
-        <a href="/bubblesort.html"><li>Bubble Sort</li></a>
-        <a href="/sorting/selectionsort.html"><li>Selection Sort</li></a>
+        <a href="/sorting/bubblesort.html"><li>Bubble Sort</li></a>
+        <a href="/sorting/insertionsort.html"><li>Insertion Sort</li></a>
         <a href="sorting/mergesort.html"><li>Merge Sort</li></a>
         <a href="sorting/quicksort.html"><li>Quick Sort</li></a>
         <a href="sorting/heapsort.html"><li>Heap Sort</li></a>
@@ -34,16 +34,16 @@
       </ul>
     </div>
   </nav>
-    <script src="insertion.js"></script>
+    <script src="selectionsort.js"></script>
 
 
-	<p class="header">Insertion Sort</p>
+	<p class="header">Selection SORT</p>
     <h3 id = "swap">Swap Counter : 0</h3>
 
     <div id = "dabba"><div id="array"></div></div>
 		
     <div id = "buttons">
-        <button onclick="InsertionSort()" class="btn-45"><span>Sort!</span></button>
+        <button onclick="SelectionSort()" class="btn-45"><span>Sort!</span></button>
         <button onclick="generatearray()" class="btn-45"><span>New Array</span></button>
         <button onclick="stopsort()" class="btn-45"><span>Stop!</span></button>
     </div>
@@ -62,11 +62,11 @@
                 </div>
                 <div class="infoDetails">
                     
-                        <h1>Insertion Sort</h1>
+                        <h1>Selection Sort</h1>
                         <br>
                             <h3>Worst Complexity: <strong>O</strong>(n<sup>2</sup>)</h3>
 							<h3>Average complexity: <strong>O</strong>(n<sup>2</sup>)</h3>
-							<h3>Best complexity: <strong>O</strong>(n)</h3>
+							<h3>Best complexity: <strong>O</strong>(n<sup>2</sup>)</h3>
                             <h3>Space Complexity: <strong>O</strong>(1)</h3>
                         
                 
@@ -74,10 +74,11 @@
             </div>
             <div class="description">
                 <div class="name">
-                    <h1>Insertion Sort</h1>
+                    <h1>Selection Sort</h1>
                 </div>
                 <div class="textDescription">
-                    <p>Insertion sort iterates, consuming one input element each repetition, and grows a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
+                    <p>
+                        The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from the unsorted part and putting it at the beginning. 
                     </p>
 					<br>
                 </div>
@@ -85,7 +86,7 @@
             </div>
         </div>
     </div>																																														
-	<script src="insertion.js"></script>
+	<script src="selectionsort.js"></script>
 </body>
 
 </html>

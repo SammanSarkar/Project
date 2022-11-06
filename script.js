@@ -103,22 +103,22 @@ next();
 //update function 
 function algo_change(algo){
   if(algo == 0){
-    document.getElementById("1").style.color = '#a646c6';
-    document.getElementById("2").style.color = '#680780';
+    document.getElementById("1").style.color = '#680780';
+    document.getElementById("2").style.color = '#a646c6';
     document.getElementById("choose").innerHTML = "Choose A Sorting Algorithm: " ; 
     phrases = p1 ; 
     document.getElementById("head").innerHTML = "Sorting" ; 
     document.getElementById("head2").innerHTML = "Sorting" ; 
-    document.getElementById("info").innerHTML ="A sorting algorithm is a method for reorganizing a large number of" 
-    +" items into a specific<br>order, such as alphabetical, highest-to-lowest" 
+    document.getElementById("info").innerHTML = "A sorting algorithm is a method for reorganizing a large number of" 
+    +"items into a specific order,<br> &nbsp such as alphabetical, highest-to-lowest" 
     +"value or shortest-to-longest distance.<br><br>Real Life Examples: "; 
     
    document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"sorting/bubblesort.html\" ><h2>Bubble Sort </h2></a></div><div class=\"box\"><a href=\"sorting/insertionsort.html\"  ><h2>Insertion Sort</h2></a></div><div class=\"box\"><a href=\"sorting/selectionsort.html\" ><h2>Selection sort</h2></a></div><div class=\"box\"><a href=\"sorting/mergesort.html\" ><h2>Merge Sort</h2></a></div><div class=\"box\"><a href=\"sorting/quicksort.html\" ><h2>Quick Sort</h2></a></div><div class=\"box\"><a href=\"sorting/heapsort.html\"  ><h2>Heap Sort</h2></a></div>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
   }else{
-    document.getElementById("2").style.color = '#a646c6';
-    document.getElementById("1").style.color = '#680780'; 
+    document.getElementById("2").style.color = '#680780';
+    document.getElementById("1").style.color = '#a646c6'; 
     document.getElementById("choose").innerHTML = "Choose A Pathfinding Algorithm: " ; 
     phrases = p2 ; 
     document.getElementById("head").innerHTML = "Pathfinding" ; 
