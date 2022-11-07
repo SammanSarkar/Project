@@ -46,18 +46,18 @@ async function SelectionSort(delay = 500) {
     // Assign i to min_idx
     min_idx = i;
   
-    // Provide darkblue color to the ith bar
-    bars[i].style.backgroundColor = "#c0a6f6";
+    // Provide green color to the ith bar
+    bars[i].style.backgroundColor = "#009933";
     for (var j = i + 1; j < bars.length; j += 1) {
   
-      // Provide red color to the jth bar
-      bars[j].style.backgroundColor = "#c0a6f6";
+      // Provide green color to the jth bar
+      bars[j].style.backgroundColor = "#009933";
         
       // To pause the execution of code for 300 milliseconds
       await new Promise((resolve) =>
         setTimeout(() => {
           resolve();
-        }, 300)
+        }, 600)
       );
   
       // To store the integer value of jth bar to var1 
@@ -71,13 +71,13 @@ async function SelectionSort(delay = 500) {
         if (min_idx !== i) {
   
           // Provide skyblue color to the (min-idx)th bar
-          bars[min_idx].style.backgroundColor = "#a53db7";
+          bars[min_idx].style.backgroundColor = "#86377b";
         }
         min_idx = j;
       } else {
   
         // Provide skyblue color to the jth bar
-        bars[j].style.backgroundColor = "#a53db7";
+        bars[j].style.backgroundColor = "#86377b";
       }
     }
     
@@ -86,24 +86,26 @@ async function SelectionSort(delay = 500) {
 		}
 		  
     // To swap ith and (min_idx)th bar
-    
+    var temp1 = bars[min_idx].style.height;
     var temp2 = bars[min_idx].childNodes[0].innerText;
+    bars[min_idx].style.height = bars[i].style.height;
+    bars[i].style.height = temp1;
     bars[min_idx].childNodes[0].innerText = bars[i].childNodes[0].innerText;
     await swap();
     bars[i].childNodes[0].innerText = temp2;
       
-    // To pause the execution of code for 300 milliseconds
+    // To pause the execution of code for 500 milliseconds
     await new Promise((resolve) =>
       setTimeout(() => {
         resolve();
-      }, 300)
+      }, 600)
     );
   
-    // Provide skyblue color to the (min-idx)th bar
+    // Provide purplecolor to the (min-idx)th bar
     bars[min_idx].style.backgroundColor = "#a53db7";
   
-    // Provide lightgreen color to the ith bar
-    bars[i].style.backgroundColor = "#86377b";
+    // Provide purple color to the ith bar
+    bars[i].style.backgroundColor = "#a53db7";
   }
   
 }
