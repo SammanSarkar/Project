@@ -34,9 +34,9 @@ function swap(el1, el2) {
   s++;
   document.getElementById("swap").innerHTML = "Swap Counter :" + s;
   return new Promise((resolve) => {
-    var temp = el1.style.transform;
-    el1.style.transform = el2.style.transform;
-    el2.style.transform = temp;
+    // var temp = el1.style.transform;
+    // el1.style.transform = el2.style.transform;
+    // el2.style.transform = temp;
 
     window.requestAnimationFrame(function () {
       setTimeout(() => {
@@ -98,14 +98,11 @@ async function SelectionSort(delay = 500) {
 		}
 		  
     // To swap ith and (min_idx)th bar
-    var temp1 = bars[min_idx].style.height;
-    var temp2 = bars[min_idx].childNodes[0].innerText;
-    bars[min_idx].style.height = bars[i].style.height;
-    bars[i].style.height = temp1;
-    // bars[min_idx].childNodes[0].innerText = bars[i].childNodes[0].innerText;
-    await swap(bars[min_idx],bars[i]);
     
-    // bars[i].childNodes[0].innerText = temp2;
+    var temp2 = bars[min_idx].childNodes[0].innerText;
+    bars[min_idx].childNodes[0].innerText = bars[i].childNodes[0].innerText;
+    bars[i].childNodes[0].innerText = temp2;
+    await swap(bars[i],bars[min_idx]);
       
     // To pause the execution of code for 500 milliseconds
     await new Promise((resolve) =>
