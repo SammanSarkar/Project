@@ -30,9 +30,21 @@ function generatearray() {
   }
 }
 
-function swap() {
+function swap(el1, el2) {
   s++;
   document.getElementById("swap").innerHTML = "Swap Counter :" + s;
+  return new Promise((resolve) => {
+    var temp = el1.style.transform;
+    el1.style.transform = el2.style.transform;
+    el2.style.transform = temp;
+
+    window.requestAnimationFrame(function () {
+      setTimeout(() => {
+        container.insertBefore(el2, el1);
+        resolve();
+      }, 800);
+    });
+  });
 }
 
 async function SelectionSort(delay = 500) {
@@ -90,9 +102,10 @@ async function SelectionSort(delay = 500) {
     var temp2 = bars[min_idx].childNodes[0].innerText;
     bars[min_idx].style.height = bars[i].style.height;
     bars[i].style.height = temp1;
-    bars[min_idx].childNodes[0].innerText = bars[i].childNodes[0].innerText;
-    await swap();
-    bars[i].childNodes[0].innerText = temp2;
+    // bars[min_idx].childNodes[0].innerText = bars[i].childNodes[0].innerText;
+    await swap(bars[min_idx],bars[i]);
+    
+    // bars[i].childNodes[0].innerText = temp2;
       
     // To pause the execution of code for 500 milliseconds
     await new Promise((resolve) =>
