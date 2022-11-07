@@ -49,7 +49,7 @@ function swap(el1, el2) {
 
 async function SelectionSort(delay = 500) {
 	stop = false ;
-	let bars = document.querySelectorAll(".block");
+	var bars = document.querySelectorAll(".block");
 	
     // Assign 0 to min_idx
    var min_idx = 0;
@@ -80,7 +80,7 @@ async function SelectionSort(delay = 500) {
         
       // Compare val1 & val2
       if (val1 < val2) {
-        if (min_idx !== i) {
+        if (min_idx != i) {
   
           // Provide skyblue color to the (min-idx)th bar
           bars[min_idx].style.backgroundColor = "#86377b";
@@ -99,10 +99,13 @@ async function SelectionSort(delay = 500) {
 		  
     // To swap ith and (min_idx)th bar
     
-    var temp2 = bars[min_idx].childNodes[0].innerText;
-    bars[min_idx].childNodes[0].innerText = bars[i].childNodes[0].innerText;
-    bars[i].childNodes[0].innerText = temp2;
-    await swap(bars[i],bars[min_idx]);
+    
+    await swap(bars[min_idx],bars[i]);
+    // bars = document.querySelectorAll(".block");
+
+    var temp2 = bars[min_idx].childNodes[0].innerHTML;
+    bars[min_idx].childNodes[0].innerHTML = bars[i].childNodes[0].innerHTML;
+    bars[i].childNodes[0].innerHTML = temp2;
       
     // To pause the execution of code for 500 milliseconds
     await new Promise((resolve) =>
