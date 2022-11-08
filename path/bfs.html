@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path.css" />
+</head>
+<body>
+    <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+         
+          <ul id="menu">
+            <a href="../index.html"><li>Home</li></a>
+            <a href="insertionsort.html"><li>Insertion Sort</li></a>
+            <a href="selectionsort.html"><li>Selection Sort</li></a>
+            <a href="sorting/mergesort.html"><li>Merge Sort</li></a>
+            <a href="sorting/quicksort.html"><li>Quick Sort</li></a>
+            <a href="countingsort.html"><li>Counting Sort</li></a>
+            <a href="path/dijkstra.html"><li>Dijkstra</li></a>
+            <a href="path/bfs.html"><li>BFS</li></a>
+            <a href="path/dfs.html"><li>DFS</li></a>
+            
+          </ul>
+        </div>
+      </nav>
+      <p class="header">BREADTH FIRST SEARCH</p>
+    <div id = "graph"></div>
+    <div id = "buttons">
+    <button id = "obs" onclick = "obs()" class="btn-45"><span>Generate obstacles!</span></button>
+    <button id = "clear"  class="btn-45"><span>Clear</span></button>
+  </div>
+   
+    <script src="bfs.js"></script>
+</body>
+</html>
