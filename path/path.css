@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.header {
+	font-size: 50px;
+  font-weight: 600;
+	text-align: center;
+	color: #b96dd7;
+	font-family: "Poppins", sans-serif;
+    
+}
+::-webkit-scrollbar {
+	display: none;  /* Hides scrollbar */
+  }
+h1{
+	color: #b96dd7;
+    
+}
+
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #edb8f7;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #913ab3 ;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  font-family: "Poppins", sans-serif;
+  
+  position: absolute;
+  width: 260px;
+  height: 773px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #e0d6e2;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{ color: #913ab3 ;
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+#menu li:hover
+{
+  color: #590f74;
+}
+
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+.cells{
+	width: 38px;
+	height: 38px;
+	border-bottom: 1px solid #a646c6;
+	border-right: 1px solid  #a646c6;
+	background: rgb(255, 222, 254);
+  
+}
+
+.rows:first-of-type{
+	border-top: 1px solid  #a646c6;
+}
+
+.rows .cells:first-of-type{
+	border-left: 1px solid  #a646c6;
+}
+
+.rows{
+	display: flex;
+}
+
+
+/*Different Colors*/
+.start{
+    background-color: rgb(158, 35, 210);
+
+}
+.obst{
+  background-color: rgb(53, 19, 56);
+
+}
+.selected{
+	/*Cell that is clicked (TARGET SELECTED)*/
+	background-color: #5746c6;
+
+}
+
+.fastest{
+	/*Fastest animation color*/
+	background-color: #680780;
+
+}
+
+.blue{
+	/*Fast animation color*/
+	background-color: #a646c6;
+
+}
+
+.path{
+	/*Slow animation color*/
+	background-color: #cb5eef;
+
+}
+
+.target{
+	/*Color when target cell is found (TARGET ACHIEVED!)*/
+	background-color: #82ea9f;
+  
+}
+
+.showPath{
+	/*FINAL PATH COLOR*/
+	background-color: #fefefe;
+
+}
+
+.hover{
+	/*CELLS HOVER EFFECT*/
+	background-color: #d98cf3;
+}
+#buttons{
+  margin-left: 32%;
+}
+#graph{
+ margin-left: 280px;
+ margin-right: 280px;
+}
+
+
+  .btn-45,
+  .btn-45 *,
+  .btn-45 :after,
+  .btn-45 :before,
+  .btn-45:after,
+  .btn-45:before {
+	border: 0 solid;
+	
+	box-sizing: border-box;
+  }
+  .btn-45 {
+	  
+	-webkit-tap-highlight-color: transparent;
+	-webkit-appearance: button;
+	background-color: #ddb3e4;
+	background-image: none;
+	color: rgb(255, 255, 255);
+	cursor: pointer;  
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	line-height: 1.5;
+	margin: 0;
+	-webkit-mask-image: -webkit-radial-gradient(#000, rgb(203, 162, 213));
+	padding: 0;
+  }
+  .btn-45:disabled {
+	cursor: default;
+  }
+  .btn-45:-moz-focusring {
+	outline: auto;
+  }
+  .btn-45 svg {
+	display: block;
+	vertical-align: middle;
+  }
+  .btn-45 [hidden] {
+	display: none;
+  }
+  .btn-45 {
+	  
+	border: 1px solid;
+	border-radius: 999px;
+	box-sizing: border-box;
+	/* display: block; */
+	overflow: hidden;
+	margin-top: 30px;
+	/* margin-left: 690px; */
+	padding: 1.2rem 3rem;
+	position: relative;
+	text-transform: uppercase;
+  }
+  .btn-45 span {
+	font-weight: 900;
+	mix-blend-mode:lighten;
+  }
+  .btn-45:after,
+  .btn-45:before {
+	background: #b96dd7;
+	content: "";
+	height: 100%;
+	left: -100%;
+	position: absolute;
+	top: 0;
+	transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+	width: 100%;
+	will-change: transform;
+  }
+  .btn-45:after {
+	background: #e6aaf3;
+	transition-delay: 0.1s;
+	z-index: -1;
+  }
+  .btn-45:hover:after,
+  .btn-45:hover:before {
+	transform: translateX(100%);
+  }
