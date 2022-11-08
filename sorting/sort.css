@@ -441,13 +441,11 @@ h1{
 }
 
 #swap {
- 
-  bottom: 10px;
-  right: 10px;
-text-align: center;
+ text-align: center;
   font-size: 2em;
+  font-family: 'Poppins';
   font-weight: bolder;
-  color: #7e44fc;
+  color: #b96dd7;
 }
 
 #swip {
