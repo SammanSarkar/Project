@@ -39,6 +39,7 @@ for (let i=0; i<cells.length; i++){
 	cells[i].addEventListener("click", function(){
 		if (isPlay){
 			for (let j=0; j<cells.length; j++){
+				cells[j].innerHTML = "" ;
 				cells[j].classList.remove("selected");
 				cells[j].classList.remove("path");
 				cells[j].classList.remove("target");
