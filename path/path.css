@@ -20,7 +20,10 @@ h1{
 	color: #b96dd7;
     
 }
-
+#dot{
+  font-size: 34px;
+  text-align: center;
+}
 
 #menuToggle
 {
@@ -222,6 +225,7 @@ h1{
 .path{
 	/*Slow animation color*/
 	background-color: #cb5eef;
+  
 
 }
 
@@ -233,7 +237,8 @@ h1{
 
 .showPath{
 	/*FINAL PATH COLOR*/
-	background-color: #fefefe;
+	background-color: #ffffff;
+  
 
 }
 
