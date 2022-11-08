@@ -139,7 +139,6 @@ generatearray();
 // generate_idx();
 
 // Calling HeapSort function
-HeapSort(10);
 
 function stopsort() {
     stop = true;
