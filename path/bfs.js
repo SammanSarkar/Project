@@ -175,6 +175,7 @@ function displayPath(tar, par){
 document.getElementById("obs").addEventListener("click", function(){
      
     for (let j=0; j<cells.length; j++){
+	cells[j].innerHTML = "" ;
         cells[j].classList.remove("selected");
         cells[j].classList.remove("path");
         cells[j].classList.remove("target");
