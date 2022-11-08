@@ -1,3 +1,3 @@
 # Algorithm Visulizer
-# Coder :- Samman Sarkar, Ayush Verma and Nitin Bisht,
-# Laptop :- Saxam
+# Samman Sarkar, Ayush Verma, Nitin Bisht and Saxam
+
