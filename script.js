@@ -113,7 +113,7 @@ function algo_change(algo){
     +" items into a specific<br>order, such as alphabetical, highest-to-lowest" 
     +"value or shortest-to-longest distance.<br><br>Real Life Examples: "; 
     
-   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"sorting/bubblesort.html\" ><h2>Bubble Sort </h2></a></div><div class=\"box\"><a href=\"sorting/insertionsort.html\"  ><h2>Insertion Sort</h2></a></div><div class=\"box\"><a href=\"sorting/selectionsort.html\" ><h2>Selection sort</h2></a></div><div class=\"box\"><a href=\"sorting/mergesort.html\" ><h2>Merge Sort</h2></a></div><div class=\"box\"><a href=\"sorting/quicksort.html\" ><h2>Quick Sort</h2></a></div><div class=\"box\"><a href=\"sorting/countingsort.html\"  ><h2>Counting Sort</h2></a></div>";
+   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"sorting/bubblesort.html\" ><h2>Bubble Sort </h2></a></div><div class=\"box\"><a href=\"sorting/insertionsort.html\"  ><h2>Insertion Sort</h2></a></div><div class=\"box\"><a href=\"sorting/selectionsort.html\" ><h2>Selection sort</h2></a></div><div class=\"box\"><a href=\"sorting/heap.html\" ><h2>Merge Sort</h2></a></div><div class=\"box\"><a href=\"sorting/quicksort.html\" ><h2>Quick Sort</h2></a></div><div class=\"box\"><a href=\"sorting/countingsort.html\"  ><h2>Counting Sort</h2></a></div>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
   }else{
@@ -126,7 +126,7 @@ function algo_change(algo){
     document.getElementById("info").innerHTML = "Pathfinding algorithms are used to identify optimal routes through a graph for <br> uses such as logistics planning,"
     +" least cost call or IP routing, and gaming simulation. <br><br>Real Life Examples: "; 
 
-   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"path/bfs.html\" ><h2>BFS</h2></a></div><div class=\"box\"><a href=\"path/dfs.html\" ><h2>DFS</h2></a></div>";
+   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"path/dijkstra.html\" ><h2>Dijkstra </h2></a></div><div class=\"box\"><a href=\"path/bfs.html.html\" ><h2>BFS</h2></a></div><div class=\"box\"><a href=\"path/dfs.html\" ><h2>DFS</h2></a></div>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
   }

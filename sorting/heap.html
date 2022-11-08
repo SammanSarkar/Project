@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Sort</title>
+    <title>Insertion Sort</title>
     <link rel="stylesheet" href="sort.css" />
 </head>
 <body>
@@ -22,9 +22,9 @@
      
       <ul id="menu">
         <a href="../index.html"><li>Home</li></a>
-        <a href="insertionsort.html"><li>Insertion Sort</li></a>
+        <a href="bubblesort.html"><li>Bubble Sort</li></a>
+        <a href="insertionsort.html"><li>Heap Sort</li></a>
         <a href="selectionsort.html"><li>Selection Sort</li></a>
-        <a href="heap.html"><li>Heap Sort</li></a>
         <a href="quicksort.html"><li>Quick Sort</li></a>
         <a href="countingsort.html"><li>Counting Sort</li></a>
         <a href="path/dijkstra.html"><li>Dijkstra</li></a>
@@ -34,16 +34,16 @@
       </ul>
     </div>
   </nav>
-    <script src="bubblesort.js"></script>
+    <script src="heap.js"></script>
 
 
-	<p class="header">BUBBLE SORT</p>
+	<p class="header">HEAP SORT</p>
     
-
+    <h3 id = "swip">Swap Counter : 0</h3>	
     <div id = "dabba"><div id="array"></div></div>
-	<h3 id = "swap">Swap Counter : 0</h3>	
+	
     <div id = "buttons">
-        <button onclick="BubbleSort()" class="btn-45"><span>Sort!</span></button>
+        <button onclick="HeapSort(10)" class="btn-45"><span>Sort!</span></button>
         <button onclick="generatearray()" class="btn-45"><span>New Array</span></button>
         <button onclick="stopsort()" class="btn-45"><span>Stop!</span></button>
     </div>
@@ -62,24 +62,22 @@
                 </div>
                 <div class="infoDetails">
                     
-                        <h1>Bubble Sort</h1>
+                        <h1>Heap Sort</h1>
                         <br>
-                            <h3>Time Complexity: O(n<sup>2</sup>)</h3>  
-
-                            <h3>Space Complexity: O(n)</h3>
-							<br>
-							<h3>yeh part fix krunga baad me</h3>
+                            <h3>Worst Complexity: <strong>O</strong>(nlogn)</h3>
+							<h3>Average complexity: <strong>O</strong>(nlogn)</h3>
+							<h3>Best complexity: <strong>O</strong>(nlogn)</h3>
+                            <h3>Space Complexity: <strong>O</strong>(1)</h3>
                         
                 
                 </div>
             </div>
             <div class="description">
                 <div class="name">
-                    <h1>Bubble Sort</h1>
+                    <h1>Heap Sort</h1>
                 </div>
                 <div class="textDescription">
-                    <p>Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are in the intended order.
-						Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort.
+                    <p>Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to the selection sort where we first find the minimum element and place the minimum element at the beginning. Repeat the same process for the remaining elements.
                     </p>
 					<br>
                 </div>
@@ -87,7 +85,7 @@
             </div>
         </div>
     </div>																																														
-	<script src="bubblesort.js"></script>
+	<script src="heap.js"></script>
 </body>
 
 </html>
