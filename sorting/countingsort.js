@@ -1,7 +1,14 @@
 var container = document.getElementById("array");
-
+var count_container = document.getElementById("count");
 // Function to generate the array of blocks
 function generatearray() {
+
+var elements = container.getElementsByClassName("block");
+while (elements[0]) {
+    elements[0].parentNode.removeChild(elements[0]);
+}
+
+
 for (var i = 0; i < 15; i++) {
 	// Return a value from 1 to 100 (both inclusive)
 	var value = Math.ceil(Math.random() * 15);
@@ -26,11 +33,13 @@ for (var i = 0; i < 15; i++) {
 	array_ele.appendChild(array_ele_label);
 	container.appendChild(array_ele);
 }
+
 }
 
 // Function to generate the frequency array
-var count_container = document.getElementById("count");
+
 function generate_freq() {
+	
 for (var i = 0; i < 15; i++) {
 	// Creating element div
 	var array_ele2 = document.createElement("div");
@@ -149,3 +158,23 @@ generate_freq();
 function stopsort() {
 	stop = true ; 
 }
+
+function clear_freq() {
+	stop = true ; 
+	var blocks = document.querySelectorAll(".block");
+
+for (var i = 0; i < 15; i += 1) {
+	
+	blocks[i].style.backgroundColor = "#FF4949";
+
+	//Extracting the value of current block
+	var value = Number(blocks[i].childNodes[0].innerHTML);
+
+	var freq_array = document.getElementsByClassName("block_id3");
+    var freq1_array = document.getElementsByClassName("block2");
+	freq_array[i].innerText = 0;
+    freq1_array[i].style.backgroundColor = "darkgray";
+	
+	blocks[i].style.backgroundColor = "blue";
+}
+	}	
