@@ -435,3 +435,17 @@ h1{
 {
   transform: none;
 }
+
+#swap{
+  text-align: center;
+}
+
+#swap {
+ 
+  bottom: 10px;
+  right: 10px;
+text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
+  color: #7e44fc;
+}
