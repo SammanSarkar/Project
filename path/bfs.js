@@ -14,6 +14,9 @@ let isPlay = true;
 cells[(Sx * ncols) +Sy].classList.add("start") ; 
 
 document.getElementById("clear").addEventListener("click", function(){
+	if(!isPlay){
+		return ;
+	}
 	for (let j=0; j<cells.length; j++){
         obst[j] = 0 ;
     }
