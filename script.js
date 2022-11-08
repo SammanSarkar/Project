@@ -126,7 +126,7 @@ function algo_change(algo){
     document.getElementById("info").innerHTML = "Pathfinding algorithms are used to identify optimal routes through a graph for <br> uses such as logistics planning,"
     +" least cost call or IP routing, and gaming simulation. <br><br>Real Life Examples: "; 
 
-   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"path/dijkstra.html\" ><h2>Dijkstra </h2></a></div><div class=\"box\"><a href=\"path/bfs.html.html\" ><h2>BFS</h2></a></div><div class=\"box\"><a href=\"path/dfs.html\" ><h2>DFS</h2></a></div>";
+   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"path/bfs.html\" ><h2>BFS</h2></a></div><div class=\"box\"><a href=\"path/dfs.html\" ><h2>DFS</h2></a></div>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
   }
