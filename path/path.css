@@ -21,7 +21,7 @@ h1{
     
 }
 #dot{
-  font-size: 34px;
+  font-size: 28px;  
   text-align: center;
 }
 
@@ -239,9 +239,12 @@ h1{
 	/*FINAL PATH COLOR*/
 	background-color: #ffffff;
   
-
 }
-
+.found{
+	/*FINAL PATH COLOR*/
+	background-color: #e8fa24;
+  
+}
 .hover{
 	/*CELLS HOVER EFFECT*/
 	background-color: #d98cf3;
