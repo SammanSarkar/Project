@@ -171,13 +171,13 @@ function displayPath(tar, par){
 				}
 				
 				if(p[tarCopy]==0){
-					cells[tarCopy].innerHTML = "<h1 id = dot>→</h1>" ;
+					cells[tarCopy].innerHTML = "<h1 id = dot>🡺</h1>" ;
 				}else if(p[tarCopy]==1){
-					cells[tarCopy].innerHTML = "<h1 id = dot>←</h1>" ;
+					cells[tarCopy].innerHTML = "<h1 id = dot>🡸</h1>" ;
 				}else if(p[tarCopy]==2){
-					cells[tarCopy].innerHTML = "<h1 id = dot>↓</h1>" ;
+					cells[tarCopy].innerHTML = "<h1 id = dot>🡻</h1>" ;
 				}else if(p[tarCopy]==3){
-					cells[tarCopy].innerHTML = "<h1 id = dot>↑</h1>" ;
+					cells[tarCopy].innerHTML = "<h1 id = dot>🡹</h1>" ;
 				}else{
 					cells[tarCopy].innerHTML = "<h1 id = dot>🎉</h1>" ;
 				}
