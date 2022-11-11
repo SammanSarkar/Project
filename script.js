@@ -85,6 +85,12 @@ var p2 = [
  'Finding shortest distance between two locations',
  'Searching the web'
 ];
+var p3 = [
+  'To implement back functionality in the internet browser.',
+  'To store the possible moves in a chess game.',
+  'To store a set of ﬁxed key words which are referenced very frequently',
+  'You need to evaluate an expression (i.e., parse). '
+ ];
 var phrases = p1;
 
 const el = document.querySelector(".text");
@@ -105,6 +111,7 @@ function algo_change(algo){
   if(algo == 0){
     document.getElementById("1").style.color = '#a646c6';
     document.getElementById("2").style.color = '#680780';
+    document.getElementById("3").style.color = '#680780'; 
     document.getElementById("choose").innerHTML = "Choose A Sorting Algorithm: " ; 
     phrases = p1 ; 
     document.getElementById("head").innerHTML = "Sorting" ; 
@@ -116,9 +123,10 @@ function algo_change(algo){
    document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"sorting/bubblesort.html\" ><h2>Bubble Sort </h2></a></div><div class=\"box\"><a href=\"sorting/insertionsort.html\"  ><h2>Insertion Sort</h2></a></div><div class=\"box\"><a href=\"sorting/selectionsort.html\" ><h2>Selection sort</h2></a></div><div class=\"box\"><a href=\"sorting/heap.html\" ><h2>Heap Sort</h2></a></div><div class=\"box\"><a href=\"sorting/bucket.html\" ><h2>Bucket Sort</h2></a></div><div class=\"box\"><a href=\"sorting/countingsort.html\"  ><h2>Counting Sort</h2></a></div>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
-  }else{
+  }else if(algo == 1){
     document.getElementById("2").style.color = '#a646c6';
-    document.getElementById("1").style.color = '#680780'; 
+    document.getElementById("1").style.color = '#680780';
+    document.getElementById("3").style.color = '#680780';  
     document.getElementById("choose").innerHTML = "Choose A Pathfinding Algorithm: " ; 
     phrases = p2 ; 
     document.getElementById("head").innerHTML = "Pathfinding" ; 
@@ -127,6 +135,19 @@ function algo_change(algo){
     +" least cost call or IP routing, and gaming simulation. <br><br>Real Life Examples: "; 
 
    document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"path/bfs.html\" ><h2>BFS</h2></a></div><div class=\"box\"><a href=\"path/dfs.html\" ><h2>DFS</h2></a></div>";
+   boxes = document.querySelectorAll(".box");
+   checkBoxes() ; 
+  }else{
+    document.getElementById("3").style.color = '#a646c6';
+    document.getElementById("1").style.color = '#680780'; 
+    document.getElementById("2").style.color = '#680780';
+    document.getElementById("choose").innerHTML = "Choose A Data Structures: " ; 
+    phrases = p3 ; 
+    document.getElementById("head").innerHTML = "Data-Structure" ; 
+    document.getElementById("head2").innerHTML = "Data-Structure" ; 
+    document.getElementById("info").innerHTML = "In computer science, a data structure is a data organization, management,<br>and storage format that is usually chosen for efficient access to data <br><br>Real Life Examples: "; 
+
+   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"data_structures/linked_list.html\" ><h2>Linked List</h2></a></div><div class=\"box\"><a href=\"data_structures/stack.html\" ><h2>Stack</h2></a></div><div class=\"box\"><a href=\"data_structures/queue.html\" ><h2>Queue</h2></a></div>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
   }
