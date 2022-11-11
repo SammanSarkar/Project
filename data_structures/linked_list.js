@@ -20,7 +20,7 @@ function displayData() {
         arr[b] = "<li>"+txt+"</li>";
         error.innerHTML = "Number of elements : " + c;
             if(b> a){
-                list.innerHTML += "<li >-></li>";
+                list.innerHTML += "<li >➡️</li>";
             }
             list.innerHTML  = list.innerHTML + arr[b];
         
@@ -38,7 +38,7 @@ function delete_front(){
     error.innerHTML = "Number of elements : " + c;
     for(var i = a ; i <=b ;i++ ){
         if(i>a){
-            list.innerHTML += "<li>-></li>";
+            list.innerHTML += "<li>➡️</li>";
         }
         list.innerHTML =  list.innerHTML + arr[i] ; 
     }
