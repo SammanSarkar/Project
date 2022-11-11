@@ -325,14 +325,14 @@ animation: move-wave 3s;
 
 .content1 {
 
-  position: relative;
+
  
   margin-bottom: 200px;
 }
 
 .content1 h2 {
   color: #fff;
-  font-size: 8em;
+  font-size: 95px;
   position: absolute;
   transform: translate(-50%, -50%);
 }
