@@ -1,3 +1,3 @@
-# Algorithm Visulizer
+# Algorithm Visualizer
 # Samman Sarkar, Ayush Verma, Nitin Bisht and Saxam
 
