@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BFS</title>
+    <title>Dijkstra's Algorithm</title>
     <link rel="stylesheet" href="path.css" />
 </head>
 <body>
@@ -27,9 +27,8 @@
         <a href="../sorting/heap.html"><li>Heap Sort</li></a>
         <a href="../sorting/quicksort.html"><li>Quick Sort</li></a>
         <a href="../sorting/countingsort.html"><li>Counting Sort</li></a>
-        <!-- <a href="bfs.html"><li>BFS</li></a> -->
+        <a href="bfs.html"><li>BFS</li></a>
         <a href="dfs.html"><li>DFS</li></a>
-        <a href="dijkstra.html"><li>Dijkstra</li></a>
         <a href="../data_structures/linked_list.html"><li>Linked List</li></a>
         <a href="../data_structures/stack.html"><li>Stack</li></a>
         <a href="../data_structures/queue.html"><li>Queue</li></a>
@@ -37,7 +36,7 @@
           </ul>
         </div>
       </nav>
-      <p id= "head" class="header">BREADTH FIRST SEARCH</p>
+      <p id= "head" class="header">Dijkstra's Algorithm</p>
 
     <div id = "graph"></div>
     <div id = "buttons">
@@ -57,9 +56,9 @@
                 </div>
                 <div class="infoDetails">
                     
-                        <h1>Breadth First Search</h1>
+                        <h1>Dijkstra's Algorithm</h1>
                         <br>
-                            <h3>Time Complexity:O(V + E)</h3>  
+                            <h3>Time Complexity:O((V + E)log(V))</h3>  
 
                             <h3>Space Complexity: O(V)</h3><br>
                             <h3>V is number of nodes and E is number of edges</h3>
@@ -71,12 +70,12 @@
             </div>
             <div class="description">
                 <div class="name">
-                    <h1>Breadth First Search</h1>
+                    <h1>Dijkstra's Algorithm</h1>
                 </div>
                 <div class="textDescription">
-                    <p>Breadth-first search is an algorithm for searching a tree data structure for a node
-                       that satisfies a given property. It starts at the tree root and explores all nodes at 
-                       the present depth prior to moving on to the nodes at the next depth level.
+                    <p>Dijkstra's algorithm is an algorithm for finding the shortest paths between nodes in a graph.
+                        It can also be used for finding the shortest paths from a single node to a single destination node by 
+                        stopping the algorithm once the shortest path to the destination node has been determined. 
                     </p>
 					<br>
                 </div>
@@ -84,6 +83,6 @@
             </div>
         </div>
     </div>		
-    <script src="bfs.js"></script>
+    <script src="dijkstra.js"></script>
 </body>
 </html>
