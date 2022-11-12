@@ -325,9 +325,7 @@ animation: move-wave 3s;
 
 .content1 {
 
-
- 
-  margin-bottom: 200px;
+  margin-bottom: 160px;
 }
 
 .content1 h2 {
@@ -403,5 +401,5 @@ animation: move-wave 3s;
   border-radius: 50px;
   padding-left: 6px;
   padding-right: 6px;
-  margin: 20px;
+
 }
