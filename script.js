@@ -74,7 +74,7 @@ class TextScramble {
 }
 var p1 = [
   'Arranging students of as class in order of their height',
-  'During election counting, we want to know the order of the parties',
+  'During election, we want to know the order of the parties',
   'In any ecommerce website we sort items by price',
 
 ];
