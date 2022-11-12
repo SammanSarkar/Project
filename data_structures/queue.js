@@ -8,7 +8,7 @@ function displayData() {
     let list = document.getElementById('list')
     
       if(txt){
-        if((b-a)>=9){
+        if((b-a)>=10){
             error.innerHTML = "Too Many elements!";
             setTimeout(function(){
 
