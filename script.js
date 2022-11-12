@@ -74,13 +74,12 @@ class TextScramble {
 }
 var p1 = [
   'Arranging students of as class in order of their height',
-  'Students roll numbers assigned based on the alphabetical order of names',
-  'During election poll counting, we are interested to know the order of the parties',
-  'In any ecommerce website we tend to sort items by price from lowest to highest',
+  'During election counting, we want to know the order of the parties',
+  'In any ecommerce website we sort items by price',
 
 ];
 var p2 = [
- 'In video games, the computer must direct simulated opponents around the map',
+ 'In video games, the computer must direct opponents around the map',
  'Finding way through a maze',
  'Finding shortest distance between two locations',
  'Searching the web'
@@ -88,7 +87,7 @@ var p2 = [
 var p3 = [
   'To implement back functionality in the internet browser.',
   'To store the possible moves in a chess game.',
-  'To store a set of ﬁxed key words which are referenced very frequently',
+  'To store a ﬁxed key words which are used very frequently',
   'You need to evaluate an expression (i.e., parse). '
  ];
 var phrases = p1;
