@@ -19,7 +19,7 @@ document.getElementById("clear").addEventListener("click", function(){
 	if(!isPlay){
 		return ;
 	}
-	document.getElementById("head").innerText = "DEPTH FIRST SEARCH" ;
+
 	for (let j=0; j<cells.length; j++){
         obst[j] = 0 ;
     }
@@ -40,7 +40,7 @@ document.getElementById("clear").addEventListener("click", function(){
 
 for (let i=0; i<cells.length; i++){
 	cells[i].addEventListener("click", function(){
-		document.getElementById("head").innerText = "DEPTH FIRST SEARCH" ;
+
 		if (isPlay){
 			for (let j=0; j<cells.length; j++){
 				cells[j].innerHTML = "" ;
@@ -174,16 +174,16 @@ function displayPath(tar, par){
 				}
 				
 				if(p[tarCopy]==0){
-					cells[tarCopy].innerHTML = "<h1 id = dot>➡️</h1>" ;
+					cells[tarCopy].innerHTML = "<h1 id = dot>⮞</h1>" ;
 				}else if(p[tarCopy]==1){
-					cells[tarCopy].innerHTML = "<h1 id = dot>⬅️</h1>" ;
+					cells[tarCopy].innerHTML = "<h1 id = dot>⮜</h1>" ;
 				}else if(p[tarCopy]==2){
-					cells[tarCopy].innerHTML = "<h1 id = dot>⬇️</h1>" ;
+					cells[tarCopy].innerHTML = "<h1 id = dot>⮟</h1>" ;
 				}else if(p[tarCopy]==3){
-					cells[tarCopy].innerHTML = "<h1 id = dot>⬆️</h1>" ;
+					cells[tarCopy].innerHTML = "<h1 id = dot>⮝</h1>" ;
 				}else{
 					cells[tarCopy].innerHTML = "<h1 id = dot>🎯</h1>" ;
-					document.getElementById("head").innerText = "🎉DEPTH FIRST SEARCH🎉" ;
+		
 				
 				}
 				
@@ -206,7 +206,7 @@ function displayPath(tar, par){
 
 }
 document.getElementById("obs").addEventListener("click", function(){
-	document.getElementById("head").innerText = "DEPTH FIRST SEARCH" ;
+
     for (let j=0; j<cells.length; j++){
 	cells[j].innerHTML = "" ;
 	    cells[j].classList.remove("found");
