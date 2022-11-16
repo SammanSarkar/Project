@@ -167,7 +167,7 @@ function algo_change(algo){
     phrases = p4 ; 
     document.getElementById("head").innerHTML = "Searching" ; 
     document.getElementById("head2").innerHTML = "Searching" ; 
-    document.getElementById("info").innerHTML = "Searching is the process of finding the desired information from the set of items stored in the form of elements in the computer memory.<br><br>Real Life Examples: "; 
+    document.getElementById("info").innerHTML = "Searching is the process of finding the desired information from the set of items<br>stored in the form of elements in the computer memory.<br><br>Real Life Examples: "; 
 
    document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"searching/linear_search.html\" ><h2>Linear Search</h2>";
    boxes = document.querySelectorAll(".box");
