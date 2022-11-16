@@ -73,7 +73,7 @@ h1{
 
 .NTBS {
 	text-align: center;
-    font-size: 2em;
+    font-size: 29px;
     font-family: 'Poppins';
     font-weight: bolder;
     color: #b96dd7;
@@ -224,7 +224,7 @@ h1{
     border-radius: 11px;
   }
 #buttons{
-  margin-left: 31%;
+  margin-left: 35%;
 }
   .btn-45,
 .btn-45 *,
@@ -472,3 +472,13 @@ text-align: center;
   font-weight: bolder;
   color: #fff;
 }
+
+#fname{
+  text-align: center;
+  margin-top: 20px;
+  width: 200px;
+  color: #913ab3;
+  border-radius: 34px;
+  border-color: #b96dd7;
+  font-size: 29px;
+} 
