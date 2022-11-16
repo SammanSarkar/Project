@@ -376,7 +376,7 @@ animation: move-wave 3s;
   }
 }
 #select_algo{
-  margin-bottom: 170px;
+  margin-bottom: 140px;
 }
 #select_button{
   font-family: "Poppins", sans-serif;
@@ -402,4 +402,15 @@ animation: move-wave 3s;
   padding-right: 6px;
   box-shadow: 0px 0px 98px 5px #d588ef;
 
+}
+#top{ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: center;
+  color: #86377b;
+  font-size: 40px ;
+}
+#uppar{
+  margin:10px;
 }
