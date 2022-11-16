@@ -457,10 +457,10 @@ h1{
 
 #swap {
  text-align: center;
-  font-size: 2em;
+  font-size: 0em;
   font-family: 'Poppins';
   font-weight: bolder;
-  color: #b96dd7;
+  color: #f8f6f9;
 }
 
 #swip {
