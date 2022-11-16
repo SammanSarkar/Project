@@ -122,7 +122,7 @@ function algo_change(algo){
     document.getElementById("head").innerHTML = "Sorting" ; 
     document.getElementById("head2").innerHTML = "Sorting" ; 
     document.getElementById("info").innerHTML = "A sorting algorithm is a method for reorganizing a large number of" 
-    +" items into a specific<br>order, such as alphabetical, highest-to-lowest" 
+    +" items<br>into a specific order, such as highest-to-lowest " 
     +"value or shortest-to-longest distance.<br><br>Real Life Examples: "; 
     
    document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"sorting/bubblesort.html\" ><h2>Bubble Sort </h2></a></div><div class=\"box\"><a href=\"sorting/insertionsort.html\"  ><h2>Insertion Sort</h2></a></div><div class=\"box\"><a href=\"sorting/selectionsort.html\" ><h2>Selection sort</h2></a></div><div class=\"box\"><a href=\"sorting/heap.html\" ><h2>Heap Sort</h2></a></div><div class=\"box\"><a href=\"sorting/bucket.html\" ><h2>Bucket Sort</h2></a></div><div class=\"box\"><a href=\"sorting/countingsort.html\"  ><h2>Counting Sort</h2></a></div>";
