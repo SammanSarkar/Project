@@ -165,8 +165,8 @@ function algo_change(algo){
     document.getElementById("3").style.color = '#680780';
     document.getElementById("choose").innerHTML = "Choose A Searching Method: " ; 
     phrases = p4 ; 
-    document.getElementById("head").innerHTML = "Searching" ; 
-    document.getElementById("head2").innerHTML = "Searching" ; 
+    document.getElementById("head").innerHTML = "Searching Algorithm" ; 
+    document.getElementById("head2").innerHTML = "Searching Algorithm" ; 
     document.getElementById("info").innerHTML = "Searching is the process of finding the desired information from the set<br>of items stored in the form of elements in the computer memory.<br><br>Real Life Examples: "; 
 
    document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"searching/linear_search.html\" ><h2>Linear Search</h2></a></div><div class=\"box\"><a href=\"searching/binary_search.html\" ><h2>Binary Search</h2></a></div>";
