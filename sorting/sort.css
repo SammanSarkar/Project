@@ -6,10 +6,11 @@
 }
 
 body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-
+::-webkit-scrollbar {
+  display: none;  /* Hides scrollbar */
+}
 .header {
 	font-size: 50px;
   font-weight: 600;
