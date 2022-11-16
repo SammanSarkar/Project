@@ -116,6 +116,7 @@ function algo_change(algo){
     document.getElementById("1").style.color = '#a646c6';
     document.getElementById("2").style.color = '#680780';
     document.getElementById("3").style.color = '#680780'; 
+    document.getElementById("4").style.color = '#680780';
     document.getElementById("choose").innerHTML = "Choose A Sorting Algorithm: " ; 
     phrases = p1 ; 
     document.getElementById("head").innerHTML = "Sorting" ; 
@@ -131,6 +132,7 @@ function algo_change(algo){
     document.getElementById("2").style.color = '#a646c6';
     document.getElementById("1").style.color = '#680780';
     document.getElementById("3").style.color = '#680780';  
+    document.getElementById("4").style.color = '#680780';
     document.getElementById("choose").innerHTML = "Choose A Pathfinding Algorithm: " ; 
     phrases = p2 ; 
     document.getElementById("head").innerHTML = "Pathfinding" ; 
@@ -145,6 +147,7 @@ function algo_change(algo){
     document.getElementById("3").style.color = '#a646c6';
     document.getElementById("1").style.color = '#680780'; 
     document.getElementById("2").style.color = '#680780';
+    document.getElementById("4").style.color = '#680780';
     document.getElementById("choose").innerHTML = "Choose A Data Structures: " ; 
     phrases = p3 ; 
     document.getElementById("head").innerHTML = "Data-Structure" ; 
@@ -156,9 +159,10 @@ function algo_change(algo){
    checkBoxes() ; 
   }
   else{
-    document.getElementById("3").style.color = '#a646c6';
+    document.getElementById("4").style.color = '#a646c6';
     document.getElementById("1").style.color = '#680780'; 
     document.getElementById("2").style.color = '#680780';
+    document.getElementById("3").style.color = '#680780';
     document.getElementById("choose").innerHTML = "Choose A Searching Method: " ; 
     phrases = p4 ; 
     document.getElementById("head").innerHTML = "Searching" ; 
