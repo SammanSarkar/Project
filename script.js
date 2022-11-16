@@ -113,6 +113,7 @@ next();
 //update function 
 function algo_change(algo){
   if(algo == 0){
+    
     document.getElementById("1").style.color = '#a646c6';
     document.getElementById("2").style.color = '#680780';
     document.getElementById("3").style.color = '#680780'; 
@@ -178,4 +179,7 @@ function algo_change(algo){
 function update(new_algo){
   algo = new_algo ; 
   algo_change(algo) ;     
+}
+function uppar(){
+  document.documentElement.scrollTop = 0;
 }
