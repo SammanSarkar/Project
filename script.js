@@ -90,6 +90,11 @@ var p3 = [
   'To store a ﬁxed key words which are used very frequently',
   'You need to evaluate an expression (i.e., parse). '
  ];
+var p4 = [
+  'To find out student with particular height in a class.',
+  'Going back to the page where you left while reading a book.',
+  'Finding a specific word in a dictionary.',
+ ];
 var phrases = p1;
 
 const el = document.querySelector(".text");
@@ -136,7 +141,7 @@ function algo_change(algo){
    document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"path/bfs.html\" ><h2>BFS</h2></a></div><div class=\"box\"><a href=\"path/dfs.html\" ><h2>DFS</h2></a></div><div class=\"box\"><a href=\"path/dijkstra.html\" ><h2>DIJKSTRA</h2></a></div>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
-  }else{
+  }else if(algo == 2){
     document.getElementById("3").style.color = '#a646c6';
     document.getElementById("1").style.color = '#680780'; 
     document.getElementById("2").style.color = '#680780';
@@ -147,6 +152,20 @@ function algo_change(algo){
     document.getElementById("info").innerHTML = "In computer science, a data structure is a data organization, management,<br>and storage format that is usually chosen for efficient access to data <br><br>Real Life Examples: "; 
 
    document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"data_structures/linked_list.html\" ><h2>Linked List</h2></a></div><div class=\"box\"><a href=\"data_structures/stack.html\" ><h2>Stack</h2></a></div><div class=\"box\"><a href=\"data_structures/queue.html\" ><h2>Queue</h2></a></div>";
+   boxes = document.querySelectorAll(".box");
+   checkBoxes() ; 
+  }
+  else{
+    document.getElementById("3").style.color = '#a646c6';
+    document.getElementById("1").style.color = '#680780'; 
+    document.getElementById("2").style.color = '#680780';
+    document.getElementById("choose").innerHTML = "Choose A Searching Method: " ; 
+    phrases = p4 ; 
+    document.getElementById("head").innerHTML = "Searching" ; 
+    document.getElementById("head2").innerHTML = "Searching" ; 
+    document.getElementById("info").innerHTML = "In computer science, searching is the process of finding the desired information from the set of items stored in the form of elements in the computer memory is referred to as ‘searching in data structure’.<br><br>Real Life Examples: "; 
+
+   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"searching/linear_search.html\" ><h2>Linear Search</h2>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
   }
