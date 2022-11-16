@@ -169,7 +169,7 @@ function algo_change(algo){
     document.getElementById("head2").innerHTML = "Searching" ; 
     document.getElementById("info").innerHTML = "Searching is the process of finding the desired information from the set<br>of items stored in the form of elements in the computer memory.<br><br>Real Life Examples: "; 
 
-   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"searching/linear_search.html\" ><h2>Linear Search</h2>";
+   document.getElementById("select_algo").innerHTML = "<div class=\"box\"><a href=\"searching/linear_search.html\" ><h2>Linear Search</h2></a></div><div class=\"box\"><a href=\"searching/binary_search.html\" ><h2>Binary Search</h2></a></div>";
    boxes = document.querySelectorAll(".box");
    checkBoxes() ; 
   }
