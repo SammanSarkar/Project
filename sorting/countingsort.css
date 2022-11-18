@@ -486,3 +486,8 @@ h1{
 {
   transform: none;
 }
+hr{
+
+  border-top: 1px solid #b05fd0;
+  
+}
