@@ -34,7 +34,7 @@ let arr = [];
   }
 }
 // Asynchronous BinarySearch function
-async function BinarySearch(delay = 300) {
+async function BinarySearch(delay = 450) {
     var blocks = document.querySelectorAll(".block");
     var output = document.getElementById("text");
    
