@@ -482,3 +482,8 @@ text-align: center;
   border-color: #b96dd7;
   font-size: 29px;
 } 
+hr{
+
+  border-top: 1px solid #b05fd0;
+  
+}
