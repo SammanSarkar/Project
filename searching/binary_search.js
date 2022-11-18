@@ -9,9 +9,14 @@ function generatearray() {
   while (elements[0]) {
     elements[0].parentNode.removeChild(elements[0]);
   }
-
+let arr = []; 
   for (var i = 0; i < 10; i++) {
     var value = Math.ceil(Math.random() * 100);
+    arr[i] = value ; 
+  }
+  arr.sort(function(a, b) {return a - b;  });
+  for (var i = 0; i < 10; i++) {
+    var value = arr[i];
 
     var array_ele = document.createElement("div");
 
@@ -46,7 +51,7 @@ async function BinarySearch(delay = 300) {
     // BinarySearch Algorithm
    
     var start = 0;
-    var end = 19;
+    var end = 9;
     var flag = 0;
     while (start <= end) {
       //Middle index
