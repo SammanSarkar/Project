@@ -311,29 +311,23 @@ margin-left: 180px;
 .btn-45:hover:before {
   transform: translateX(100%);
 }
+
 .container {
     margin: 0;
     padding: 0;
 	font-family: "Poppins", sans-serif;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     height: 50vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
 .card {
-    
+    margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
+
     box-sizing: border-box;
     width: 700px;
     height: 300px ;
@@ -343,8 +337,7 @@ margin-left: 180px;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    -webkit-box-shadow: 0 14px 28px rgba(150, 120, 68, 0.4), 0 10px 10px rgba(150, 120, 68, 0.4);
-    box-shadow: 0 14px 28px rgba(150, 120, 68, 0.4), 0 10px 10px rgba(150, 120, 68, 0.4);
+    box-shadow: 0 14px 100px #865193;
 }
 
 .card:hover .description {
@@ -353,14 +346,8 @@ margin-left: 180px;
 
 .infoCard {
     
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -368,21 +355,10 @@ margin-left: 180px;
     width: 37%;
     padding: 0 4% 0 .5%;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -392,12 +368,6 @@ margin-left: 180px;
     border-radius: 50%;
     border: 2px solid #7e44fc;
     background-color: cornsilk;
-}
-
-.infoCard .infoimage .img img {
-    margin: auto;
-    max-width: 100%;
-    display: block;
 }
 
 .infoCard .infoimage .simpleInfo {
@@ -417,8 +387,6 @@ margin-left: 180px;
 
 .infoCard .infoDetails {
     width: 62%;
-    -ms-flex-item-align: stretch;
-    -ms-grid-row-align: stretch;
     align-self: stretch;
     color: #fff;
     padding: 0 2%;
@@ -433,7 +401,6 @@ margin-left: 180px;
     background-color: #fff;
     width: 63%;
     height: 100%;
-    -webkit-transition: .5s all;
     transition: .5s all;
     overflow: hidden;
     border-radius: 0 3px 3px 0;
@@ -464,6 +431,7 @@ margin-left: 180px;
     font-weight: normal;
     color: #7e44fc;
 }
+
 hr{
 
   border-top: 1px solid #b05fd0;
