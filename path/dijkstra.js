@@ -61,15 +61,6 @@ for (let i=0; i<cells.length; i++){
 	});
 }
 
-for (let i=0; i<cells.length; i++){
-	cells[i].addEventListener("mouseover", function(){
-		if (isPlay)
-			cells[i].classList.add("hover");
-	});
-	cells[i].addEventListener("mouseout", function(){
-		cells[i].classList.remove("hover");
-	});
-}
 
 
 function bfs(target){
