@@ -177,6 +177,7 @@ h1{
     background-color: #590f74;
     padding: 3px 6px;
     margin: 50%;
+    font-size: 30px;
     border-radius: 10px;
     display: inline-block;
 }
@@ -190,6 +191,7 @@ h1{
 
 .infoCard .infoDetails {
     width: 62%;
+    font-size: 20px;
     align-self: stretch;
     color: #fff;
     padding: 0 2%;
