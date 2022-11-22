@@ -65,9 +65,11 @@ h1{
 .block_id {
     position: absolute;
     color: white;
-    margin-top: 12px;
+    margin-top: 10px;
     width: 100%;
     text-align: center;
+	font-size: 20px;
+  font-family: "Poppins", sans-serif;
     
 }
 
@@ -77,14 +79,18 @@ h1{
     margin-top: 50px;
     width: 100%;
     text-align: center;
+	font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
     
 .block_id3 {
     position: absolute;
     color: black;
-    margin-top: 15px;
+    margin-top: 12px;
     width: 100%;
     text-align: center;
+	font-size: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 #count {
