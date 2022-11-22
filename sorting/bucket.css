@@ -42,9 +42,11 @@ h1{
 .block_id {
     position: absolute;
     color: white;
-    margin-top: 13px;
+    margin-top: 9px;
     width: 100%;
     text-align: center;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
 }
 .block_id2 {
     position: absolute;
