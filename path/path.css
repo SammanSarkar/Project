@@ -237,7 +237,7 @@ h1{
 	background-color: #e8fa24;
   
 }
-.hover{
+.cells:hover{
 	/*CELLS HOVER EFFECT*/
 	background-color: #d98cf3;
 }
