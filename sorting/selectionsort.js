@@ -47,7 +47,7 @@ function swap(el1, el2) {
   });
 }
 
-async function SelectionSort(delay = 500) {
+async function SelectionSort(delay = 800) {
 	stop = false ;
 	var bars = document.querySelectorAll(".block");
 	
@@ -58,18 +58,18 @@ async function SelectionSort(delay = 500) {
     // Assign i to min_idx
     min_idx = i;
   
-    // Provide green color to the ith bar
-    bars[i].style.backgroundColor = "#009933";
+    // Provide dark purple color to the ith bar
+    bars[i].style.backgroundColor = "#df0aff";
     for (var j = i + 1; j < bars.length; j += 1) {
   
-      // Provide green color to the jth bar
-      bars[j].style.backgroundColor = "#009933";
+      // Provide dark purple color to the jth bar
+      bars[j].style.backgroundColor = "#df0aff";
         
       // To pause the execution of code for 300 milliseconds
       await new Promise((resolve) =>
         setTimeout(() => {
           resolve();
-        }, 600)
+        }, 800)
       );
   
       // To store the integer value of jth bar to var1 
@@ -111,7 +111,7 @@ async function SelectionSort(delay = 500) {
     await new Promise((resolve) =>
       setTimeout(() => {
         resolve();
-      }, 600)
+      }, 800)
     );
   
     // Provide purplecolor to the (min-idx)th bar
